@@ -1,0 +1,5 @@
+modules/__pycache__/
+mlruns/
+sandbox.ipynb
+.DS_Store
+optuna_mnist.ipynb
