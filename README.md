@@ -54,3 +54,19 @@ pip install -r requirements.txt
 ```
 mlflow ui --backend-store-uri sqlite:///mlruns.db
 ```
+[MLflow GUIイメージ画像](https://github.com/YutaHarada/optuna-mlflow/assets/68998525/436a551f-5662-43ad-bf0c-00fe674afa85)
+
+## 備考
+・optunaのmlflowインテグレーションである以下の2つの機能については正式リリース前なため、警告が出るが無視して良い。
+```
+optuna.integration.MLflowCallback()
+@mlflc.track_in_mlflow()
+```
+[ 警告内容 1 ]  
+ExperimentalWarning: MLflowCallback is experimental (supported from v1.4.0).   
+The interface can change in the future
+
+[ 警告内容 2 ]  
+ExperimentalWarning: track_in_mlflow is experimental (supported from v2.9.0).   
+The interface can change in the future.
+  @mlflc.track_in_mlflow()

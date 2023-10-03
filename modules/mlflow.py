@@ -2,7 +2,7 @@ import mlflow
 import sqlite3
 import os
 
-from optuna.integration.mlflow import MLflowCallback
+from optuna.integration import MLflowCallback
 
 # バックエンドの準備
 def backend(db_path):
